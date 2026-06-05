@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Gallery | Halal Fun Club</title>
+  <meta name="description" content="Explore the thrilling outdoor activities and events at Halal Fun Club gallery. Join our members in action and experience the fun firsthand. Join now and have a blast!">
+  <meta name="keywords" content="halal fun club, gallery, camp photos, stargazing, horseback riding, fishing, organic farm">
+  
+  <!-- OG Meta Tags -->
+  <meta property="og:title" content="Gallery | Halal Fun Club">
+  <meta property="og:description" content="Explore our photo albums capturing memorable camp moments, stargazing nights, horse riding, and outdoor family fun.">
+  <meta property="og:image" content="assets/images/camping-scene2-mePnjM6V9btEL3N8.jpg">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/untitled-design-4-dWxbpZ323MHpBWLq.png">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css?v=1.0.2">
+  <link rel="stylesheet" href="assets/css/components.css?v=1.0.2">
+  <link rel="stylesheet" href="assets/css/pages.css?v=1.0.2">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="main-header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link" id="nav-logo">
+        <img src="assets/images/untitled-design-4-dWxbpZ323MHpBWLq.png" alt="Halal Fun Club Logo" class="logo-image">
+        <span>Halal Fun Club</span>
+      </a>
+      
+      <!-- Hamburger Menu for Mobile -->
+      <button class="hamburger" aria-label="Toggle menu" id="menu-toggle">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="signup.html" class="nav-link">Sign Up</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Hero Banner Section -->
+    <section class="hero-banner overlay-dark" style="background-image: url('assets/images/camping-scene2-mePnjM6V9btEL3N8.jpg');" id="gallery-hero">
+      <div class="container hero-banner-content">
+        <h1 class="reveal active">Camp Gallery</h1>
+        <p class="reveal active">Explore our memorable moments, sights, stargazing, and activities</p>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section" id="gallery-section">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Our Photo Albums</h2>
+          <p>Explore our gallery to see the exciting and memorable moments from our summer camp. Browse through photo albums that capture the joy, friendship, and adventure experienced by our campers.</p>
+        </div>
+
+        <!-- Filter Navigation -->
+        <div class="gallery-filter-nav reveal" id="gallery-filter-nav">
+          <!-- Dynamically populated by gallery.js -->
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid reveal" id="gallery-grid" style="transition: opacity var(--transition-normal);">
+          <!-- Dynamically populated by gallery.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="section" style="background-color: var(--color-primary); color: var(--color-bg-white); text-align: center;" id="gallery-cta">
+      <div class="container reveal">
+        <h2 style="color: var(--color-bg-white); text-transform: uppercase; margin-bottom: 15px;">Want to be in our next album?</h2>
+        <p style="font-family: var(--font-alt); font-size: 1.2rem; max-width: 600px; margin: 0 auto 30px; color: var(--color-primary-light);">Secure a spot for your family and kids today! We cannot wait to welcome you.</p>
+        <a href="signup.html" class="btn btn-primary" id="gallery-cta-btn">Sign Up Now</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: About -->
+        <div class="footer-col">
+          <span class="footer-logo">Halal Fun Club</span>
+          <p class="footer-description">Connecting youth and families with nature, building team spirit, and creating positive energy through enriching outdoor camp adventures in Canada.</p>
+          <ul class="footer-social-list" id="footer-socials">
+            <li><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+        <!-- Col 2: Navigation links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faq.html">Frequently Asked Questions</a></li>
+            <li><a href="signup.html">Registration / Sign Up</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Col 3: Contact info -->
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact-info">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span><strong>Camp Location</strong>0 Highway 554<br>Ironbridge, Ontario, Canada</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span><strong>Email Us</strong>halalfunclub@gmail.com</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span><strong>Call Support</strong>647-803-0806</span>
+            </li>
+          </ul>
+        </div>
+        <!-- Col 4: Maps Embed -->
+        <div class="footer-col">
+          <h4>Our Location</h4>
+          <div class="footer-map-container">
+            <iframe src="https://maps.google.com/maps?q=0%20Highway%20554,%20Iron%20bridge,%20Ontario,%20Canada&t=m&z=13&ie=UTF8&output=embed" allowfullscreen="" loading="lazy" aria-label="Camp Location Map"></iframe>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="copyright-year"></span> Halal Fun Club. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/gallery-data.js?v=1.0.2"></script>
+  <script src="assets/js/gallery.js?v=1.0.2"></script>
+  <script src="assets/js/main.js?v=1.0.2"></script>
+  
+  <!-- script helper to listen to url query categories -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const categoryParam = urlParams.get('cat');
+      if (categoryParam) {
+        const filterNav = document.getElementById('gallery-filter-nav');
+        // Wait for list to render
+        setTimeout(() => {
+          const btn = filterNav.querySelector(`[data-category="${categoryParam}"]`);
+          if (btn) {
+            btn.click();
+          }
+        }, 100);
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Sign Up | Halal Fun Club</title>
+  <meta name="description" content="Sign up now for exclusive access to exciting outdoor activities and adventures at Halal Fun Club's summer camp. Reserve your spot today for an unforgettable experience!">
+  <meta name="keywords" content="halal fun club, sign up, registration, summer camp booking, family pricing">
+  
+  <!-- OG Meta Tags -->
+  <meta property="og:title" content="Sign Up & Registration | Halal Fun Club">
+  <meta property="og:description" content="Register today. Reserve a spot for youth aged 13-19 or families for $400 including food and transport.">
+  <meta property="og:image" content="assets/images/untitled-design-4-dWxbpZ323MHpBWLq.png">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/untitled-design-4-dWxbpZ323MHpBWLq.png">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css?v=1.0.2">
+  <link rel="stylesheet" href="assets/css/components.css?v=1.0.2">
+  <link rel="stylesheet" href="assets/css/pages.css?v=1.0.2">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="main-header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link" id="nav-logo">
+        <img src="assets/images/untitled-design-4-dWxbpZ323MHpBWLq.png" alt="Halal Fun Club Logo" class="logo-image">
+        <span>Halal Fun Club</span>
+      </a>
+      
+      <!-- Hamburger Menu for Mobile -->
+      <button class="hamburger" aria-label="Toggle menu" id="menu-toggle">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="signup.html" class="nav-link active">Sign Up</a></li>
+          <li><a href="contact.html" class="nav-link">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Hero Banner Section -->
+    <section class="hero-banner overlay-dark" style="background-image: url('assets/images/camping-scene2-mePnjM6V9btEL3N8.jpg');" id="signup-hero">
+      <div class="container hero-banner-content">
+        <h1 class="reveal active">Register For Camp</h1>
+        <p class="reveal active">Secure your spot today for an unforgettable summer adventure</p>
+      </div>
+    </section>
+
+    <!-- Sign Up Section -->
+    <section class="section" id="signup-section">
+      <div class="container">
+        
+        <div class="contact-layout">
+          
+          <!-- Left: Registration details -->
+          <div class="contact-info-panel reveal">
+            <div>
+              <h3>Camp Details & Pricing</h3>
+              <p style="color: var(--color-primary-light); margin-bottom: 24px;">Please read the following details carefully before registering. Detailed packets with medical forms and directions will be emailed upon registration.</p>
+              
+              <ul class="contact-details" style="margin-bottom: 20px;">
+                <li style="margin-bottom: 16px;">
+                  <i class="fas fa-calendar-alt"></i>
+                  <span>
+                    <strong>Camp Dates</strong>
+                    29th July - 4th August
+                  </span>
+                </li>
+                <li style="margin-bottom: 16px;">
+                  <i class="fas fa-user-friends"></i>
+                  <span>
+                    <strong>Eligibility</strong>
+                    Youth aged 13 to 19 & Families
+                  </span>
+                </li>
+                <li style="margin-bottom: 16px;">
+                  <i class="fas fa-dollar-sign"></i>
+                  <span>
+                    <strong>Camp Fee</strong>
+                    $400/- (Includes Food, Drink & Transportation)
+                  </span>
+                </li>
+                <li style="margin-bottom: 16px;">
+                  <i class="fas fa-bus-alt"></i>
+                  <span>
+                    <strong>Transportation</strong>
+                    Group transport provided by RV / Motorhomes
+                  </span>
+                </li>
+              </ul>
+            </div>
+            
+            <div style="background-color: rgba(255, 255, 255, 0.08); padding: 20px; border-radius: var(--radius-sm);">
+              <h4 style="color: var(--color-accent); font-size: 1.1rem; margin-bottom: 8px; text-transform: uppercase;">Payment Notice:</h4>
+              <p style="font-size: 0.9rem; margin-bottom: 0; color: var(--color-primary-light);">After submitting this registration form, our team will review the details and email you an official invoice and booking confirmation containing E-transfer payment details.</p>
+            </div>
+          </div>
+          
+          <!-- Right: Registration Form -->
+          <div class="card form-card reveal">
+            <h3 style="margin-bottom: 20px; text-transform: uppercase;">Registration Form</h3>
+            
+            <!-- Configure action to Web3Forms/Formspree for email delivery -->
+            <form id="signup-form" action="" method="POST" novalidate>
+              <div class="form-group">
+                <label for="reg-name" class="form-label">Participant's Full Name *</label>
+                <input type="text" id="reg-name" name="participant_name" class="form-control" placeholder="Enter full name" required>
+                <span class="form-error">This field is required.</span>
+              </div>
+              
+              <div class="form-group" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+                <div>
+                  <label for="reg-age" class="form-label">Age *</label>
+                  <input type="number" id="reg-age" name="participant_age" class="form-control" min="1" max="100" placeholder="e.g. 15" required>
+                  <span class="form-error">Required.</span>
+                </div>
+                <div>
+                  <label for="reg-type" class="form-label">Registration Type *</label>
+                  <select id="reg-type" name="registration_type" class="form-control" style="height: 52px;" required>
+                    <option value="youth">Youth (Ages 13-19)</option>
+                    <option value="family">Family Package</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="parent-name" class="form-label">Parent/Guardian Name (For Minors)</label>
+                <input type="text" id="parent-name" name="parent_name" class="form-control" placeholder="Parent name if participant is under 18">
+              </div>
+              
+              <div class="form-group">
+                <label for="parent-email" class="form-label">Parent / Contact Email *</label>
+                <input type="email" id="parent-email" name="contact_email" class="form-control" placeholder="Enter contact email" required>
+                <span class="form-error">Please enter a valid email address.</span>
+              </div>
+              
+              <div class="form-group">
+                <label for="parent-phone" class="form-label">Contact Phone Number *</label>
+                <input type="tel" id="parent-phone" name="contact_phone" class="form-control" placeholder="e.g. 647-803-0806" required>
+                <span class="form-error">Please enter a valid phone number.</span>
+              </div>
+              
+              <div class="form-group">
+                <label for="reg-notes" class="form-label">Dietary Restrictions or Special Notes</label>
+                <textarea id="reg-notes" name="notes" class="form-control" placeholder="List any food allergies, medical conditions, or requests here..."></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-secondary" style="width: 100%; margin-top: 10px;">Register Now</button>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: About -->
+        <div class="footer-col">
+          <span class="footer-logo">Halal Fun Club</span>
+          <p class="footer-description">Connecting youth and families with nature, building team spirit, and creating positive energy through enriching outdoor camp adventures in Canada.</p>
+          <ul class="footer-social-list" id="footer-socials">
+            <li><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+        <!-- Col 2: Navigation links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faq.html">Frequently Asked Questions</a></li>
+            <li><a href="signup.html">Registration / Sign Up</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Col 3: Contact info -->
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact-info">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span><strong>Camp Location</strong>0 Highway 554<br>Ironbridge, Ontario, Canada</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span><strong>Email Us</strong>halalfunclub@gmail.com</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span><strong>Call Support</strong>647-803-0806</span>
+            </li>
+          </ul>
+        </div>
+        <!-- Col 4: Maps Embed -->
+        <div class="footer-col">
+          <h4>Our Location</h4>
+          <div class="footer-map-container">
+            <iframe src="https://maps.google.com/maps?q=0%20Highway%20554,%20Iron%20bridge,%20Ontario,%20Canada&t=m&z=13&ie=UTF8&output=embed" allowfullscreen="" loading="lazy" aria-label="Camp Location Map"></iframe>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="copyright-year"></span> Halal Fun Club. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/forms.js?v=1.0.2"></script>
+  <script src="assets/js/main.js?v=1.0.2"></script>
+</body>
+</html>

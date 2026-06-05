@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Contact Us | Halal Fun Club</title>
+  <meta name="description" content="Get in touch with Halal Fun Club for inquiries, feedback, and support. We're here to help with any questions you may have about our outdoor activities and services.">
+  <meta name="keywords" content="halal fun club, contact us, location, phone support, email inquiry">
+  
+  <!-- OG Meta Tags -->
+  <meta property="og:title" content="Contact Us | Halal Fun Club">
+  <meta property="og:description" content="Get in touch with us. Send a message, find our camp map, email coordinates, or phone number.">
+  <meta property="og:image" content="assets/images/untitled-design-4-dWxbpZ323MHpBWLq.png">
+  <meta property="og:type" content="website">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/untitled-design-4-dWxbpZ323MHpBWLq.png">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="assets/css/style.css?v=1.0.2">
+  <link rel="stylesheet" href="assets/css/components.css?v=1.0.2">
+  <link rel="stylesheet" href="assets/css/pages.css?v=1.0.2">
+</head>
+<body>
+
+  <!-- Header & Navigation -->
+  <header class="main-header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link" id="nav-logo">
+        <img src="assets/images/untitled-design-4-dWxbpZ323MHpBWLq.png" alt="Halal Fun Club Logo" class="logo-image">
+        <span>Halal Fun Club</span>
+      </a>
+      
+      <!-- Hamburger Menu for Mobile -->
+      <button class="hamburger" aria-label="Toggle menu" id="menu-toggle">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+      
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="signup.html" class="nav-link">Sign Up</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    
+    <!-- Hero Banner Section -->
+    <section class="hero-banner overlay-dark" style="background-image: url('assets/images/camping-scene2-mP4pqexW1eTnLGkz.jpg');" id="contact-hero">
+      <div class="container hero-banner-content">
+        <h1 class="reveal active">Contact Us</h1>
+        <p class="reveal active">We are here to help with any inquiries, feedback, or support</p>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section class="section" id="contact-section">
+      <div class="container">
+        
+        <div class="contact-layout">
+          
+          <!-- Left: Contact Details and Map -->
+          <div class="contact-info-panel reveal">
+            <div>
+              <h3>Get In Touch</h3>
+              <p style="color: var(--color-primary-light); margin-bottom: 30px;">Feel free to reach out via phone, email, or drop by our location. You can also connect with us on social media.</p>
+              
+              <ul class="contact-details">
+                <li>
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>
+                    <strong>Camp Location</strong>
+                    0 Highway 554, Ironbridge, Ontario, Canada
+                  </span>
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i>
+                  <span>
+                    <strong>Email Address</strong>
+                    halalfunclub@gmail.com
+                  </span>
+                </li>
+                <li>
+                  <i class="fas fa-phone-alt"></i>
+                  <span>
+                    <strong>Phone Support</strong>
+                    647-803-0806
+                  </span>
+                </li>
+              </ul>
+            </div>
+            
+            <div>
+              <div class="contact-map-wrapper">
+                <iframe src="https://maps.google.com/maps?q=0%20Highway%20554,%20Iron%20bridge,%20Ontario,%20Canada&t=m&z=13&ie=UTF8&output=embed" allowfullscreen="" loading="lazy" aria-label="Camp Location Map"></iframe>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Right: Contact Form -->
+          <div class="card form-card reveal">
+            <h3 style="margin-bottom: 20px; text-transform: uppercase;">Send a Message</h3>
+            
+            <!-- Configure action to Web3Forms/Formspree for email delivery -->
+            <form id="contact-form" action="" method="POST" novalidate>
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name *</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                <span class="form-error">This field is required.</span>
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                <span class="form-error">Please enter a valid email address.</span>
+              </div>
+              
+              <div class="form-group">
+                <label for="phone" class="form-label">Phone Number (Optional)</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="e.g. 647-803-0806">
+                <span class="form-error">Please enter a valid phone number.</span>
+              </div>
+              
+              <div class="form-group">
+                <label for="message" class="form-label">Message *</label>
+                <textarea id="message" name="message" class="form-control" placeholder="Type your message here..." required></textarea>
+                <span class="form-error">This field is required.</span>
+              </div>
+              
+              <button type="submit" class="btn btn-secondary" style="width: 100%; margin-top: 10px;">Send Message</button>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Col 1: About -->
+        <div class="footer-col">
+          <span class="footer-logo">Halal Fun Club</span>
+          <p class="footer-description">Connecting youth and families with nature, building team spirit, and creating positive energy through enriching outdoor camp adventures in Canada.</p>
+          <ul class="footer-social-list" id="footer-socials">
+            <li><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+          </ul>
+        </div>
+        <!-- Col 2: Navigation links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="faq.html">Frequently Asked Questions</a></li>
+            <li><a href="signup.html">Registration / Sign Up</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <!-- Col 3: Contact info -->
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact-info">
+            <li>
+              <i class="fas fa-map-marker-alt"></i>
+              <span><strong>Camp Location</strong>0 Highway 554<br>Ironbridge, Ontario, Canada</span>
+            </li>
+            <li>
+              <i class="fas fa-envelope"></i>
+              <span><strong>Email Us</strong>halalfunclub@gmail.com</span>
+            </li>
+            <li>
+              <i class="fas fa-phone-alt"></i>
+              <span><strong>Call Support</strong>647-803-0806</span>
+            </li>
+          </ul>
+        </div>
+        <!-- Col 4: Maps Embed -->
+        <div class="footer-col">
+          <h4>Our Location</h4>
+          <div class="footer-map-container">
+            <iframe src="https://maps.google.com/maps?q=0%20Highway%20554,%20Iron%20bridge,%20Ontario,%20Canada&t=m&z=13&ie=UTF8&output=embed" allowfullscreen="" loading="lazy" aria-label="Camp Location Map"></iframe>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; <span id="copyright-year"></span> Halal Fun Club. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/forms.js?v=1.0.2"></script>
+  <script src="assets/js/main.js?v=1.0.2"></script>
+</body>
+</html>
