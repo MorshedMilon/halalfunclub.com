@@ -114,6 +114,64 @@
   }
 }
 
+/* What We Offer Layout styles */
+.offer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.offer-text h2 {
+  font-size: 2.25rem;
+  margin-bottom: 25px;
+  color: var(--color-primary-dark);
+}
+
+.offer-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 30px;
+}
+
+.offer-list li {
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--color-text-dark);
+}
+
+.offer-list li strong {
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+.offer-image-wrapper {
+  position: relative;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  aspect-ratio: 4 / 3;
+}
+
+.offer-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.offer-image-wrapper:hover .offer-image {
+  transform: scale(1.05);
+}
+
+@media (max-width: 992px) {
+  .offer-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
 /* Testimonial slider/showcase wrapper */
 .testimonials-section {
   background-color: var(--color-bg-white);

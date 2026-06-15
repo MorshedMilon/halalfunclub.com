@@ -23,7 +23,7 @@
   
   <!-- Stylesheets -->
   <link rel="stylesheet" href="assets/css/style.css?v=1.0.2">
-  <link rel="stylesheet" href="assets/css/components.css?v=1.0.2">
+  <link rel="stylesheet" href="assets/css/components.css?v=1.0.3">
   <link rel="stylesheet" href="assets/css/pages.css?v=1.0.2">
 </head>
 <body>
@@ -83,8 +83,31 @@
             <p>We go camping in the great Canadian nature, where we forget our daily busy schedule and enjoy hiking, bird watching, and exploring wildness. We go fishing, swimming, boating in the lakes. We of course go hunting, shooting arrows, balloons. We enjoy doing BBQ together, storytelling while lighting up campfire and when night falls, we witness the magnificent sky full of stars. While stargazing, sometimes we capture the close up view of the entire moon through a telescope.</p>
             <p>All these activities help us build team spirit. It strengthens our bonding as a family, as friends and help us build leadership skills through cooperation. It refreshes our minds and bodies and helps us engage more in our day to day activities and help us perform even better.</p>
             <p>While enjoying outdoor sports, we never forget our prayers. We continue praying together and remain thankful for what we are blessed with. Come join us in our outdoor adventures. Let's replace the negative elements of our lives with positive energy and spirit. Let's become better human and prepare to serve our communities and our great country.</p>
-            <a href="about.html" class="btn btn-primary" style="margin-top: 15px;" id="intro-read-more-btn">Read More About Us</a>
           </div>
+        </div>
+
+        <!-- What We Offer Row -->
+        <div class="offer-grid reveal" style="margin-top: 60px;">
+          <div class="offer-text">
+            <h2>What We Offer</h2>
+            <ul class="offer-list">
+              <li><strong>300 acres of private land</strong> – exclusive access to a vast natural property</li>
+              <li><strong>Waterfront cottage</strong> on the lake for your comfort and relaxation</li>
+              <li><strong>Trails, bush, creeks, open fields, and marshland</strong> within the property – home to deer, moose, elk, and bear</li>
+              <li><strong>Kayaks and canoes</strong> available for fun on the water</li>
+              <li><strong>Off-grid amenities</strong> including a hot shower, new wood stove, and propane stove</li>
+              <li><strong>Cozy cabin</strong> for a comfortable stay in nature</li>
+              <li><strong>Summer camp for kids and families</strong> – outdoor adventures and bonding experiences</li>
+            </ul>
+          </div>
+          <div class="offer-image-wrapper">
+            <img src="assets/images/screenshot_20230909_230823_photos-1-m5Kb4V8LMghja66b.jpg" alt="Group of people relaxing on a deck during lake sunset" class="offer-image">
+          </div>
+        </div>
+
+        <!-- Read More About Us Button -->
+        <div class="text-center reveal" style="margin-top: 50px;">
+          <a href="about.html" class="btn btn-primary" id="intro-read-more-btn">Read More About Us</a>
         </div>
       </div>
     </section>
@@ -176,6 +199,14 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
+            border: 2px solid transparent;
+            transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
+          }
+          .testimonials-section .testimonial-card:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 20px 45px hsla(var(--color-primary-h), var(--color-primary-s), var(--color-primary-l), 0.15), 
+                        0 0 30px hsla(var(--color-accent-h), var(--color-accent-s), var(--color-accent-l), 0.35);
+            border-color: var(--color-accent);
           }
         </style>
         

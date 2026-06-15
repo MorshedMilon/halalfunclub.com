@@ -10,6 +10,60 @@ document.addEventListener('DOMContentLoaded', () => {
   let filteredItems = [...GALLERY_ITEMS];
   let currentLightboxIndex = 0;
 
+  // Title Cleaning Helper to remove auto-generated numbers and hashes
+  const cleanTitle = (title) => {
+    if (!title) return '';
+    const words = title.split(/[\s\-_]+/);
+    const cleanWords = words.filter(word => {
+      // Filter out pure numbers
+      if (/^\d+$/.test(word)) return false;
+      
+      // Filter out base64/hash strings
+      if (word.length >= 5) {
+        const hasDigit = /[0-9]/.test(word);
+        const hasLetter = /[a-zA-Z]/.test(word);
+        if (hasDigit && hasLetter) return false;
+        
+        const hasLower = /[a-z]/.test(word);
+        const hasUpper = /[A-Z]/.test(word);
+        if (hasLower && hasUpper) {
+          const upperSub = word.slice(1);
+          if (/[A-Z]/.test(upperSub)) return false;
+        }
+      }
+      return true;
+    });
+
+    const cleaned = cleanWords.join(' ').trim();
+    const genericWords = ['img', 'image', 'scene', 'screenshot'];
+    if (genericWords.includes(cleaned.toLowerCase())) {
+      return '';
+    }
+    return cleaned;
+  };
+
+  // Extract a clean short heading from the description if the title is empty/raw
+  const getShortHeading = (title, description) => {
+    const cleanedTitle = cleanTitle(title);
+    if (cleanedTitle) {
+      return cleanedTitle;
+    }
+    
+    if (description) {
+      // Extract the event name from the pattern "Captured during our [Event Name] events."
+      const match = description.match(/Captured during our\s+(?:our\s+)?(.*?)\s+events/i);
+      if (match && match[1]) {
+        let eventName = match[1].trim();
+        // Capitalize the first letter of each word
+        return eventName.split(/\s+/).map(word => {
+          return word.charAt(0).toUpperCase() + word.slice(1);
+        }).join(' ');
+      }
+    }
+    
+    return 'Camp Memory';
+  };
+
   // 1. Create Lightbox HTML dynamically so it is available on the page
   const lightbox = document.createElement('div');
   lightbox.id = 'lightbox';
@@ -81,10 +135,11 @@ document.addEventListener('DOMContentLoaded', () => {
       filteredItems.forEach((item, index) => {
         const itemEl = document.createElement('div');
         itemEl.className = 'gallery-item reveal';
+        const displayTitle = getShortHeading(item.title, item.description);
         itemEl.innerHTML = `
           <img src="${item.path}" alt="${item.alt}" loading="lazy">
           <div class="gallery-item-overlay">
-            <h4 class="gallery-item-title">${item.title}</h4>
+            <h4 class="gallery-item-title">${displayTitle}</h4>
             <p class="gallery-item-desc">${item.description}</p>
           </div>
         `;
@@ -135,7 +190,11 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(() => {
       lightboxImg.src = item.path;
       lightboxImg.alt = item.alt;
-      lightboxTitle.textContent = item.title;
+      
+      const displayTitle = getShortHeading(item.title, item.description);
+      lightboxTitle.textContent = displayTitle;
+      lightboxTitle.style.display = '';
+      
       lightboxDesc.textContent = item.description;
       lightboxImg.style.opacity = '1';
     }, 150);

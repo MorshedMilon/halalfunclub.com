@@ -34,10 +34,10 @@ const GALLERY_ITEMS = [
   },
   {
     "path": "assets/images/rafique-vhai-bridge-A0xVn0EMpNSJGBGL.jpg",
-    "title": "Rafique Vhai Bridge A0xVn0EMpNSJGBGL",
+    "title": "Bridge with Waterfall",
     "description": "Captured during our Sightseeing events.",
     "category": "sightseeing",
-    "alt": "Rafique Vhai Bridge A0xVn0EMpNSJGBGL"
+    "alt": "Bridge with Waterfall"
   },
   {
     "path": "assets/images/20230528_063738-mp89kPOjLpFDjEVq.jpg",
